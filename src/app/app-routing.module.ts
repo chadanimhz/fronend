@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AlbumDetailsComponent } from './components/album-details/album-details.component';
 import { CreateAlbumComponent } from './components/create-album/create-album.component';
+import { HomeAlbumComponent } from './components/home-album/home-album.component';
 import { LoginComponent } from './components/login/login.component';
 import { MyAlbumComponent } from './components/my-album/my-album.component';
 import { PhotoDetailsComponent } from './components/photo-details/photo-details.component';
@@ -39,7 +40,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: MyAlbumComponent
+    component: HomeAlbumComponent
   }
 ];
 

@@ -3,5 +3,16 @@
         <i class="bi bi-arrow-left"></i> Go Back to My
         Album</button>
 
-    <p>This page will be for creating New Album</p>
+    <p>Create New Album</p>
+    <div class="col-6 mx-auto mt-3">
+        <div class="mb-3">
+            <label for="name" class="form-label">Album Name </label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Album Name" />
+        </div>
+        <div class="mb-3">
+            <label for="profilePhotoUrl" class="form-label">Cover Photo</label>
+            <input type="text" class="form-control" id="profilePhotoUrl" placeholder="Enter cover photo url" />
+        </div>
+        <button type="button" class="btn btn-secondary" (click)="onSave()">Save</button>
+    </div>
 </div>

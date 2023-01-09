@@ -9,7 +9,7 @@ import { AuthService } from './services/auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Assignment2';
+  title = 'Assignment3';
   isLoggedIn = false;
   constructor(private afAuth: AngularFireAuth, private authService: AuthService) {
     this.afAuth.authState.subscribe((user) => {

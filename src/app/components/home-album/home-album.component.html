@@ -3,15 +3,22 @@
         <button class="btn btn-primary" routerLink="/album/create">Create New Album</button>
     </div>
 
-    My Albums Will be listed here
+    All Albums
 
     <div class="d-flex flex-row flex-wrap gap-4">
-        <div class="card" style="width: 18rem;" *ngFor="let item of allMyAlbum">
+        <div class="card" style="width: 18rem;" *ngFor="let item of allAlbum">
             <img class="card-img-top" [src]="item.profilePhotoUrl" [alt]="item.name">
             <div class="card-body">
                 <h5 class="card-title">{{item.name}}</h5>
-                <button class="btn btn-primary" [routerLink]="[item.id]">Go to Album</button>
+                <button class="btn btn-primary" [routerLink]="['album',item.id]">Go to Album</button>
             </div>
         </div>
     </div>
+    <!-- 
+    <ul>
+        <li *ngFor="let item of allAlbum">
+            <pre>{{item|json}}</pre>
+        </li>
+    </ul>
+    <a routerLink="/album/1">Album Detail</a> -->
 </div>

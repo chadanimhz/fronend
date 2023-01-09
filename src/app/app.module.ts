@@ -20,6 +20,9 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { HttpClientModule } from  '@angular/common/http';
+import { HomeAlbumComponent } from './components/home-album/home-album.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +32,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CreateAlbumComponent,
     AlbumDetailsComponent,
     UploadPictureComponent,
-    PhotoDetailsComponent
+    PhotoDetailsComponent,
+    HomeAlbumComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

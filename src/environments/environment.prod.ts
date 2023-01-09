@@ -1,5 +1,6 @@
 export const environment = {
   production: true,
+  API_URL:'http://18.222.8.109:8086/api/',
   firebaseConfig: {
     apiKey: "AIzaSyDHu12DuLirZcz2pQVlRT024kGOoWRHV_Q",
     authDomain: "gmh-chadani.firebaseapp.com",

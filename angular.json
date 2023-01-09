@@ -3,11 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Assignment2": {
+    "Assignment3": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
-          "strict": true
+          "strict": false
         }
       },
       "root": "",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/assignment2",
+            "outputPath": "dist/assignment3",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -37,13 +37,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "2mb"
                 }
               ],
               "fileReplacements": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Assignment2:build:production"
+              "browserTarget": "Assignment3:build:production"
             },
             "development": {
-              "browserTarget": "Assignment2:build:development"
+              "browserTarget": "Assignment3:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Assignment2:build"
+            "browserTarget": "Assignment3:build"
           }
         },
         "test": {
@@ -103,5 +103,5 @@
       }
     }
   },
-  "defaultProject": "Assignment2"
+  "defaultProject": "Assignment3"
 }
